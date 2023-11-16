@@ -38,5 +38,5 @@ struct BranchView: View {
 }
 
 #Preview {
-    BranchView(branch: Branch(id: 1, name: "Mech", short: "Mechanical Engineering"))
+    BranchView(branch: Branch(id: 1, name: "Mechanical Engineering", short: "Mech"))
 }
