@@ -11,30 +11,32 @@ struct ContentView: View {
     
     @StateObject var viewModel = ContentViewViewModel()
     var body: some View {
-         
-        ZStack {
-            VStack {
-                ZStack {
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(height: 225)
-                        .background(Color(red: 0.9, green: 0.96, blue: 1))
-                    Image("Group 147")
-                        .resizable()
-                        .frame(height: 225)
-                }
-                .ignoresSafeArea()
-                Spacer()
-            }
-            
-            ScrollView {
-                LazyVStack(spacing: 32) {
-                    getgreetingsBar(greeting: viewModel.model.greeting)
-                    cardTileView(queryCards: viewModel.model.QueryCards)
+        
+        NavigationView {
+            ZStack {
+                VStack {
+                    ZStack {
+                        LinearGradient(colors: [Color(red: 0.9, green: 0.96, blue: 1), .white], startPoint: .top, endPoint: .bottom)
+                            .frame(height: 225)
+                        
+                        Image("Group 147")
+                            .resizable()
+                            .frame(height: 225)
+                    }
+                    .ignoresSafeArea()
                     Spacer()
                 }
                 
-                .padding(.bottom, 10)
+                ScrollView {
+                    LazyVStack(spacing: 32) {
+                        getgreetingsBar(greeting: viewModel.model.greeting)
+                        cardTileView(queryCards: viewModel.model.QueryCards)
+                        coursesView()
+                        Spacer()
+                    }
+                    
+                    .padding(.bottom, 10)
+                }
             }
         }
     }
@@ -48,6 +50,33 @@ struct ContentView: View {
         .tabViewStyle(.page(indexDisplayMode: .always))
         .frame(height: 200)
         
+    }
+    
+    func coursesView() -> some View {
+        
+        HStack {
+            Text("Explore courses")
+              .font(
+                Font.custom("Inter", size: 14)
+                  .weight(.medium)
+              )
+              .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
+            Spacer()
+            
+            NavigationLink(destination: SwiftUIView()){
+                HStack {
+                    Text("see all")
+                        .font(Font.custom("Inter", size: 14))
+                        .multilineTextAlignment(.trailing)
+                        .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))
+                }
+                Image("Vector")
+                .background(Color(red: 0.4, green: 0.4, blue: 0.4))
+                .padding(.leading, 9)
+                
+            }
+        }
+        .padding(.horizontal, 16)
     }
 }
 func getgreetingsBar(greeting: Greeting) -> some View {

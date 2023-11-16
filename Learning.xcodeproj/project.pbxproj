@@ -17,6 +17,7 @@
 		21A4923E2B05F6920052527A /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A4923D2B05F6920052527A /* ContentView-ViewModel.swift */; };
 		21A492402B05F7120052527A /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A4923F2B05F7120052527A /* ContentModel.swift */; };
 		21A492442B0609B10052527A /* QueryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492432B0609B10052527A /* QueryCardView.swift */; };
+		21A492462B0627CF0052527A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492452B0627CF0052527A /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		21A4923D2B05F6920052527A /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		21A4923F2B05F7120052527A /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		21A492432B0609B10052527A /* QueryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryCardView.swift; sourceTree = "<group>"; };
+		21A492452B0627CF0052527A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				21A492142B05F4A90052527A /* ContentView.swift */,
 				21A4923D2B05F6920052527A /* ContentView-ViewModel.swift */,
 				21A4923F2B05F7120052527A /* ContentModel.swift */,
+				21A492452B0627CF0052527A /* SwiftUIView.swift */,
 				21A492162B05F4AA0052527A /* Assets.xcassets */,
 				21A492182B05F4AA0052527A /* Learning.entitlements */,
 				21A492192B05F4AA0052527A /* Preview Content */,
@@ -270,6 +273,7 @@
 			files = (
 				21A492152B05F4A90052527A /* ContentView.swift in Sources */,
 				21A492442B0609B10052527A /* QueryCardView.swift in Sources */,
+				21A492462B0627CF0052527A /* SwiftUIView.swift in Sources */,
 				21A492402B05F7120052527A /* ContentModel.swift in Sources */,
 				21A4923E2B05F6920052527A /* ContentView-ViewModel.swift in Sources */,
 				21A492132B05F4A90052527A /* LearningApp.swift in Sources */,
@@ -446,6 +450,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -484,6 +489,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
