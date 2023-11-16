@@ -22,6 +22,7 @@
 		21A4924A2B0638B40052527A /* BranchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492492B0638B40052527A /* BranchView.swift */; };
 		21A4924C2B063BFB0052527A /* BranchListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A4924B2B063BFB0052527A /* BranchListModel.swift */; };
 		21A492542B0649840052527A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492532B0649840052527A /* Identifiers.swift */; };
+		21A492562B064B7C0052527A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492552B064B7C0052527A /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		21A492492B0638B40052527A /* BranchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchView.swift; sourceTree = "<group>"; };
 		21A4924B2B063BFB0052527A /* BranchListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListModel.swift; sourceTree = "<group>"; };
 		21A492532B0649840052527A /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		21A492552B064B7C0052527A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				21A492432B0609B10052527A /* QueryCardView.swift */,
 				21A492492B0638B40052527A /* BranchView.swift */,
+				21A492552B064B7C0052527A /* SearchBar.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				21A492402B05F7120052527A /* ContentModel.swift in Sources */,
 				21A4923E2B05F6920052527A /* ContentView-ViewModel.swift in Sources */,
 				21A492542B0649840052527A /* Identifiers.swift in Sources */,
+				21A492562B064B7C0052527A /* SearchBar.swift in Sources */,
 				21A492132B05F4A90052527A /* LearningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

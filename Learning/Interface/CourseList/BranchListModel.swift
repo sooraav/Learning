@@ -9,6 +9,7 @@ import Foundation
 
 struct BranchListModel {
     var branches: [Branch]?
+    var filteredBranches: [Branch]?
 }
 
 struct Response: Decodable {

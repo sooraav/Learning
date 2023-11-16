@@ -10,6 +10,9 @@ import SwiftUI
 struct BranchListView: View {
     @Environment(\.presentationMode) var presentation
     @StateObject var viewModel = BranchListViewModel()
+    @State var searchText = ""
+    @State var isSearching = false
+    
     var body: some View {
         ZStack {
             VStack {
@@ -40,10 +43,11 @@ struct BranchListView: View {
                 .foregroundColor(.white)
                 .padding(.top, 7)
 
+                SearchBar(searchText: $searchText, isSearching: $isSearching)
                 ScrollView {
                     
                     LazyVGrid(columns: [GridItem(), GridItem()]) {
-                        ForEach(viewModel.model.branches ?? [Branch](), id: \.id) { branch in
+                        ForEach(viewModel.model.filteredBranches ?? [Branch](), id: \.id) { branch in
                             BranchView(branch: branch)
                         }
                     }
@@ -56,6 +60,12 @@ struct BranchListView: View {
             
             viewModel.getCourses()
         }
+        .onChange(of: searchText) { newValue in
+            
+            
+            viewModel.search(query: newValue)
+        }
+        
         .navigationBarBackButtonHidden()
         
     }

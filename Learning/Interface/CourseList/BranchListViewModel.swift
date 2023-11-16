@@ -30,10 +30,20 @@ extension BranchListView {
                     let decoder = JSONDecoder()
                     let branches = try decoder.decode(Response.self, from: data).branches
                     self.model.branches = branches
+                    self.model.filteredBranches = branches
                 } catch {
                     
                     print("urlRequest failed")
                 }
+            }
+        }
+        
+        func search(query: String) {
+            if query.isEmpty {
+                
+                model.filteredBranches = model.filteredBranches
+            } else {
+                model.filteredBranches = model.filteredBranches?.filter { $0.name.localizedCaseInsensitiveContains(query) ||  $0.short.localizedCaseInsensitiveContains(query)}
             }
         }
     }
