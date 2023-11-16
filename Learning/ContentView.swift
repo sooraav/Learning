@@ -63,7 +63,7 @@ struct ContentView: View {
               .foregroundColor(Color(red: 0.18, green: 0.18, blue: 0.18))
             Spacer()
             
-            NavigationLink(destination: SwiftUIView()){
+            NavigationLink(destination: BranchListView()){
                 HStack {
                     Text("see all")
                         .font(Font.custom("Inter", size: 14))

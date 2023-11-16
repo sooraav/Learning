@@ -17,7 +17,10 @@
 		21A4923E2B05F6920052527A /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A4923D2B05F6920052527A /* ContentView-ViewModel.swift */; };
 		21A492402B05F7120052527A /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A4923F2B05F7120052527A /* ContentModel.swift */; };
 		21A492442B0609B10052527A /* QueryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492432B0609B10052527A /* QueryCardView.swift */; };
-		21A492462B0627CF0052527A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492452B0627CF0052527A /* SwiftUIView.swift */; };
+		21A492462B0627CF0052527A /* BranchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492452B0627CF0052527A /* BranchListView.swift */; };
+		21A492482B062F890052527A /* BranchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492472B062F890052527A /* BranchListViewModel.swift */; };
+		21A4924A2B0638B40052527A /* BranchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A492492B0638B40052527A /* BranchView.swift */; };
+		21A4924C2B063BFB0052527A /* BranchListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A4924B2B063BFB0052527A /* BranchListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,10 @@
 		21A4923D2B05F6920052527A /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		21A4923F2B05F7120052527A /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		21A492432B0609B10052527A /* QueryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryCardView.swift; sourceTree = "<group>"; };
-		21A492452B0627CF0052527A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		21A492452B0627CF0052527A /* BranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListView.swift; sourceTree = "<group>"; };
+		21A492472B062F890052527A /* BranchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListViewModel.swift; sourceTree = "<group>"; };
+		21A492492B0638B40052527A /* BranchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchView.swift; sourceTree = "<group>"; };
+		21A4924B2B063BFB0052527A /* BranchListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,7 @@
 				21A492142B05F4A90052527A /* ContentView.swift */,
 				21A4923D2B05F6920052527A /* ContentView-ViewModel.swift */,
 				21A4923F2B05F7120052527A /* ContentModel.swift */,
-				21A492452B0627CF0052527A /* SwiftUIView.swift */,
+				21A4924D2B063F2C0052527A /* CourseList */,
 				21A492162B05F4AA0052527A /* Assets.xcassets */,
 				21A492182B05F4AA0052527A /* Learning.entitlements */,
 				21A492192B05F4AA0052527A /* Preview Content */,
@@ -139,6 +145,17 @@
 				21A492302B05F4AA0052527A /* LearningUITestsLaunchTests.swift */,
 			);
 			path = LearningUITests;
+			sourceTree = "<group>";
+		};
+		21A4924D2B063F2C0052527A /* CourseList */ = {
+			isa = PBXGroup;
+			children = (
+				21A492492B0638B40052527A /* BranchView.swift */,
+				21A492452B0627CF0052527A /* BranchListView.swift */,
+				21A492472B062F890052527A /* BranchListViewModel.swift */,
+				21A4924B2B063BFB0052527A /* BranchListModel.swift */,
+			);
+			path = CourseList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +290,10 @@
 			files = (
 				21A492152B05F4A90052527A /* ContentView.swift in Sources */,
 				21A492442B0609B10052527A /* QueryCardView.swift in Sources */,
-				21A492462B0627CF0052527A /* SwiftUIView.swift in Sources */,
+				21A4924A2B0638B40052527A /* BranchView.swift in Sources */,
+				21A492462B0627CF0052527A /* BranchListView.swift in Sources */,
+				21A4924C2B063BFB0052527A /* BranchListModel.swift in Sources */,
+				21A492482B062F890052527A /* BranchListViewModel.swift in Sources */,
 				21A492402B05F7120052527A /* ContentModel.swift in Sources */,
 				21A4923E2B05F6920052527A /* ContentView-ViewModel.swift in Sources */,
 				21A492132B05F4A90052527A /* LearningApp.swift in Sources */,
